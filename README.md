@@ -1,76 +1,59 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+Given an array of bird sightings where every element represents a bird type id, determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
 
-# Project Name
+Example
 
-> One paragraph statement about the project.
+There are two each of types  and , and one sighting of type . Pick the lower of the two types seen twice: type .
 
-![screenshot](./app_screenshot.png)
+Function Description
 
-Additional description about the project and its features.
+Complete the migratoryBirds function in the editor below.
 
-## Built With
+migratoryBirds has the following parameter(s):
 
-- Major languages
-- Frameworks
-- Technologies used
+int arr[n]: the types of birds sighted
+Returns
 
-## Live Demo
+int: the lowest type id of the most frequently sighted birds
+Input Format
 
-[Live Demo Link](https://livedemo.com)
+The first line contains an integer, , the size of .
+The second line describes  as  space-separated integers, each a type number of the bird sighted.
 
+Constraints
 
-## Getting Started
+It is guaranteed that each type is , , , , or .
+Sample Input 0
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+6
+1 4 4 4 5 3
+Sample Output 0
 
+4
+Explanation 0
 
-To get a local copy up and running follow these simple example steps.
+The different types of birds occur in the following frequencies:
 
-### Prerequisites
+Type :  bird
+Type :  birds
+Type :  bird
+Type :  birds
+Type :  bird
+The type number that occurs at the highest frequency is type , so we print  as our answer.
 
-### Setup
+Sample Input 1
 
-### Install
+11
+1 2 3 4 5 4 3 2 1 3 4
+Sample Output 1
 
-### Usage
+3
+Explanation 1
 
-### Run tests
+The different types of birds occur in the following frequencies:
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+Type : 
+Type : 
+Type : 
+Type : 
+Type : 
+Two types have a frequency of , and the lower of those is type .
